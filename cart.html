@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width,initial-scale=1.0">
+  <title>NFT Purchase</title>
+  <link rel="stylesheet" href="css/cartstyle.css">
+  <!--script src="js/script.js"></script-->
+</head>
+<header>
+  <h1>
+    <p style="color:white"> Order a random Hotheads NFT</p>
+  </h1>
+</header>
+
+<body>
+  <div id="desc-last">
+  </div>
+  <div class="wrap">
+    <div class="item">
+      <form>
+        <span>
+        <input type="text" onfocus="this.value=''" id="input_id" value="  Enter your wallet address">
+        <input type="button"  id="submitbutton" value="Submit" onclick="wawa()">
+      <!--    <input type="button" value="Submit" onclick="wawa()">-->
+        </div>
+      </span>
+        <div id="alert" style="color: red"></div>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script>
+  function wawa() {
+  var variable = document.getElementById('input_id').value;
+  document.getElementById('alert').innerHTML = 'The user input is: ' + variable;
+}
+</script>
+</html>
